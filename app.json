@@ -16,6 +16,12 @@
       ]
     ],
     "name": "runner2",
-    "slug": "runner2"
+    "slug": "runner2",
+    "extra": {
+      "eas": {
+        "projectId": "04c8e328-a7ee-44b0-be09-cc10f20bc76c"
+      }
+    },
+    "owner": "shuan_s"
   }
 }
