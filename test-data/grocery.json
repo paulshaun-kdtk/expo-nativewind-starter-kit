@@ -5,7 +5,7 @@
     "type": "soft-drinks",
     "description": "Swiss Chard - Red",
     "filename": "https://media.istockphoto.com/id/1206806317/vector/shopping-cart-icon-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=1RRQJs5NDhcB67necQn1WCpJX2YMfWZ4rYi1DFKlkNA=",
-    "price": "$411.10",
+    "price": 411.1,
     "rating": 109.43
   },
   {
@@ -14,7 +14,7 @@
     "type": "utilities",
     "description": "Wine - Crozes Hermitage E.",
     "filename": "https://media.istockphoto.com/id/1206806317/vector/shopping-cart-icon-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=1RRQJs5NDhcB67necQn1WCpJX2YMfWZ4rYi1DFKlkNA=",
-    "price": "$69.48",
+    "price": 69.48,
     "rating": 57.92
   },
   {
@@ -23,7 +23,7 @@
     "type": "bakery",
     "description": "Lemon Pepper",
     "filename": "https://media.istockphoto.com/id/1206806317/vector/shopping-cart-icon-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=1RRQJs5NDhcB67necQn1WCpJX2YMfWZ4rYi1DFKlkNA=",
-    "price": "$34.55",
+    "price": 34.55,
     "rating": 498.39
   },
   {
@@ -32,7 +32,7 @@
     "type": "dairy",
     "description": "Cumin - Ground",
     "filename": "https://media.istockphoto.com/id/1206806317/vector/shopping-cart-icon-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=1RRQJs5NDhcB67necQn1WCpJX2YMfWZ4rYi1DFKlkNA=",
-    "price": "$480.84",
+    "price": 480.8,
     "rating": 438.1
   },
   {
@@ -41,7 +41,7 @@
     "type": "breakfast",
     "description": "Mushrooms - Honey",
     "filename": "https://media.istockphoto.com/id/1206806317/vector/shopping-cart-icon-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=1RRQJs5NDhcB67necQn1WCpJX2YMfWZ4rYi1DFKlkNA=",
-    "price": "$85.85",
+    "price": 85.85,
     "rating": 282.3
   },
   {
@@ -50,7 +50,7 @@
     "type": "soft-drinks",
     "description": "Chocolate - Unsweetened",
     "filename": "https://media.istockphoto.com/id/1206806317/vector/shopping-cart-icon-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=1RRQJs5NDhcB67necQn1WCpJX2YMfWZ4rYi1DFKlkNA=",
-    "price": "$292.82",
+    "price": 292.8,
     "rating": 259.28
   },
   {
@@ -59,7 +59,7 @@
     "type": "bakery",
     "description": "Spice - Peppercorn Melange",
     "filename": "https://media.istockphoto.com/id/1206806317/vector/shopping-cart-icon-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=1RRQJs5NDhcB67necQn1WCpJX2YMfWZ4rYi1DFKlkNA=",
-    "price": "$272.46",
+    "price": 272.4,
     "rating": 333.62
   },
   {
@@ -68,7 +68,7 @@
     "type": "meat",
     "description": "Yoplait - Strawbrasp Peac",
     "filename": "https://media.istockphoto.com/id/1206806317/vector/shopping-cart-icon-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=1RRQJs5NDhcB67necQn1WCpJX2YMfWZ4rYi1DFKlkNA=",
-    "price": "$255.58",
+    "price": 255.5,
     "rating": 281.59
   },
   {
@@ -77,7 +77,7 @@
     "type": "vegetable",
     "description": "Juice - Prune",
     "filename": "https://media.istockphoto.com/id/1206806317/vector/shopping-cart-icon-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=1RRQJs5NDhcB67necQn1WCpJX2YMfWZ4rYi1DFKlkNA=",
-    "price": "$259.96",
+    "price": 259.9,
     "rating": 377.85
   },
   {
@@ -86,7 +86,7 @@
     "type": "vegan",
     "description": "Aromat Spice / Seasoning",
     "filename": "https://media.istockphoto.com/id/1206806317/vector/shopping-cart-icon-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=1RRQJs5NDhcB67necQn1WCpJX2YMfWZ4rYi1DFKlkNA=",
-    "price": "$307.71",
+    "price": 307.7,
     "rating": 41.76
   },
   {
@@ -95,7 +95,7 @@
     "type": "meat",
     "description": "Tray - 16in Rnd Blk",
     "filename": "https://media.istockphoto.com/id/1206806317/vector/shopping-cart-icon-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=1RRQJs5NDhcB67necQn1WCpJX2YMfWZ4rYi1DFKlkNA=",
-    "price": "$326.60",
+    "price": 326.6,
     "rating": 392.22
   },
   {
@@ -104,7 +104,7 @@
     "type": "vegetable",
     "description": "Coffee - Beans, Whole",
     "filename": "https://media.istockphoto.com/id/1206806317/vector/shopping-cart-icon-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=1RRQJs5NDhcB67necQn1WCpJX2YMfWZ4rYi1DFKlkNA=",
-    "price": "$424.59",
+    "price": 424.5,
     "rating": 185.91
   },
   {
@@ -113,7 +113,7 @@
     "type": "utilities",
     "description": "Soup Knorr Chili With Beans",
     "filename": "https://media.istockphoto.com/id/1206806317/vector/shopping-cart-icon-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=1RRQJs5NDhcB67necQn1WCpJX2YMfWZ4rYi1DFKlkNA=",
-    "price": "$225.85",
+    "price": 225.8,
     "rating": 13.16
   },
   {
@@ -122,7 +122,7 @@
     "type": "bakery",
     "description": "Coffee Cup 16oz Foam",
     "filename": "https://media.istockphoto.com/id/1206806317/vector/shopping-cart-icon-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=1RRQJs5NDhcB67necQn1WCpJX2YMfWZ4rYi1DFKlkNA=",
-    "price": "$168.87",
+    "price": 168.8,
     "rating": 376.36
   },
   {
@@ -131,7 +131,7 @@
     "type": "vegetable",
     "description": "Vinegar - White",
     "filename": "https://media.istockphoto.com/id/1206806317/vector/shopping-cart-icon-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=1RRQJs5NDhcB67necQn1WCpJX2YMfWZ4rYi1DFKlkNA=",
-    "price": "$156.70",
+    "price": 156.7,
     "rating": 481.06
   },
   {
@@ -140,7 +140,7 @@
     "type": "vegetable",
     "description": "Nori Sea Weed - Gold Label",
     "filename": "https://media.istockphoto.com/id/1206806317/vector/shopping-cart-icon-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=1RRQJs5NDhcB67necQn1WCpJX2YMfWZ4rYi1DFKlkNA=",
-    "price": "$362.15",
+    "price": 362.1,
     "rating": 205.72
   },
   {
@@ -149,7 +149,7 @@
     "type": "utilities",
     "description": "Muffin - Mix - Strawberry Rhubarb",
     "filename": "https://media.istockphoto.com/id/1206806317/vector/shopping-cart-icon-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=1RRQJs5NDhcB67necQn1WCpJX2YMfWZ4rYi1DFKlkNA=",
-    "price": "$251.28",
+    "price": 251.2,
     "rating": 179.68
   },
   {
@@ -158,7 +158,7 @@
     "type": "breakfast",
     "description": "Puree - Pear",
     "filename": "https://media.istockphoto.com/id/1206806317/vector/shopping-cart-icon-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=1RRQJs5NDhcB67necQn1WCpJX2YMfWZ4rYi1DFKlkNA=",
-    "price": "$446.71",
+    "price": 446.7,
     "rating": 468.54
   },
   {
@@ -167,7 +167,7 @@
     "type": "meat",
     "description": "Ezy Change Mophandle",
     "filename": "https://media.istockphoto.com/id/1206806317/vector/shopping-cart-icon-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=1RRQJs5NDhcB67necQn1WCpJX2YMfWZ4rYi1DFKlkNA=",
-    "price": "$409.60",
+    "price": 409.6,
     "rating": 435.42
   },
   {
@@ -176,7 +176,7 @@
     "type": "bakery",
     "description": "Turkey - Breast, Boneless Sk On",
     "filename": "https://media.istockphoto.com/id/1206806317/vector/shopping-cart-icon-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=1RRQJs5NDhcB67necQn1WCpJX2YMfWZ4rYi1DFKlkNA=",
-    "price": "$243.44",
+    "price": 243.4,
     "rating": 348.55
   },
   {
@@ -185,7 +185,7 @@
     "type": "utilities",
     "description": "Pasta - Linguini, Dry",
     "filename": "https://media.istockphoto.com/id/1206806317/vector/shopping-cart-icon-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=1RRQJs5NDhcB67necQn1WCpJX2YMfWZ4rYi1DFKlkNA=",
-    "price": "$444.62",
+    "price": 444.6,
     "rating": 486.69
   },
   {
@@ -194,7 +194,7 @@
     "type": "bakery",
     "description": "Squid - U 5",
     "filename": "https://media.istockphoto.com/id/1206806317/vector/shopping-cart-icon-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=1RRQJs5NDhcB67necQn1WCpJX2YMfWZ4rYi1DFKlkNA=",
-    "price": "$188.92",
+    "price": 188.9,
     "rating": 369.72
   },
   {
@@ -203,7 +203,7 @@
     "type": "dairy",
     "description": "Chicken - Leg, Boneless",
     "filename": "https://media.istockphoto.com/id/1206806317/vector/shopping-cart-icon-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=1RRQJs5NDhcB67necQn1WCpJX2YMfWZ4rYi1DFKlkNA=",
-    "price": "$292.12",
+    "price": 292.1,
     "rating": 185.11
   },
   {
@@ -212,7 +212,7 @@
     "type": "meat",
     "description": "Orange - Blood",
     "filename": "https://media.istockphoto.com/id/1206806317/vector/shopping-cart-icon-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=1RRQJs5NDhcB67necQn1WCpJX2YMfWZ4rYi1DFKlkNA=",
-    "price": "$168.96",
+    "price": 168.9,
     "rating": 54.94
   },
   {
@@ -221,7 +221,7 @@
     "type": "soft-drinks",
     "description": "Beef - Cooked, Corned",
     "filename": "https://media.istockphoto.com/id/1206806317/vector/shopping-cart-icon-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=1RRQJs5NDhcB67necQn1WCpJX2YMfWZ4rYi1DFKlkNA=",
-    "price": "$478.16",
+    "price": 478.1,
     "rating": 279.94
   },
   {
@@ -230,7 +230,7 @@
     "type": "vegan",
     "description": "Juice - V8, Tomato",
     "filename": "https://media.istockphoto.com/id/1206806317/vector/shopping-cart-icon-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=1RRQJs5NDhcB67necQn1WCpJX2YMfWZ4rYi1DFKlkNA=",
-    "price": "$36.85",
+    "price": 36.85,
     "rating": 8.11
   },
   {
@@ -239,520 +239,7 @@
     "type": "bakery",
     "description": "Clam Nectar",
     "filename": "https://media.istockphoto.com/id/1206806317/vector/shopping-cart-icon-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=1RRQJs5NDhcB67necQn1WCpJX2YMfWZ4rYi1DFKlkNA=",
-    "price": "$26.95",
+    "price": 26.95,
     "rating": 272.9
-  },
-  {
-    "id": "66fbc33afc13ae45014fde1b",
-    "title": "Kale - Red",
-    "type": "utilities",
-    "description": "Goat - Leg",
-    "filename": "https://media.istockphoto.com/id/1206806317/vector/shopping-cart-icon-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=1RRQJs5NDhcB67necQn1WCpJX2YMfWZ4rYi1DFKlkNA=",
-    "price": "$87.36",
-    "rating": 490.71
-  },
-  {
-    "id": "66fbc33afc13ae45014fde1c",
-    "title": "Spoon - Soup, Plastic",
-    "type": "vegetable",
-    "description": "Aspic - Clear",
-    "filename": "https://media.istockphoto.com/id/1206806317/vector/shopping-cart-icon-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=1RRQJs5NDhcB67necQn1WCpJX2YMfWZ4rYi1DFKlkNA=",
-    "price": "$387.64",
-    "rating": 70.85
-  },
-  {
-    "id": "66fbc33afc13ae45014fde1d",
-    "title": "Beer - True North Strong Ale",
-    "type": "soft-drinks",
-    "description": "Scallops - In Shell",
-    "filename": "https://media.istockphoto.com/id/1206806317/vector/shopping-cart-icon-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=1RRQJs5NDhcB67necQn1WCpJX2YMfWZ4rYi1DFKlkNA=",
-    "price": "$456.16",
-    "rating": 187.52
-  },
-  {
-    "id": "66fbc33afc13ae45014fde1e",
-    "title": "Longos - Grilled Chicken With",
-    "type": "utilities",
-    "description": "Calypso - Pineapple Passion",
-    "filename": "https://media.istockphoto.com/id/1206806317/vector/shopping-cart-icon-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=1RRQJs5NDhcB67necQn1WCpJX2YMfWZ4rYi1DFKlkNA=",
-    "price": "$214.52",
-    "rating": 319.83
-  },
-  {
-    "id": "66fbc33afc13ae45014fde1f",
-    "title": "Flavouring - Rum",
-    "type": "dairy",
-    "description": "Beef - Montreal Smoked Brisket",
-    "filename": "https://media.istockphoto.com/id/1206806317/vector/shopping-cart-icon-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=1RRQJs5NDhcB67necQn1WCpJX2YMfWZ4rYi1DFKlkNA=",
-    "price": "$237.72",
-    "rating": 318.99
-  },
-  {
-    "id": "66fbc33afc13ae45014fde20",
-    "title": "Chef Hat 20cm",
-    "type": "breakfast",
-    "description": "Veal - Knuckle",
-    "filename": "https://media.istockphoto.com/id/1206806317/vector/shopping-cart-icon-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=1RRQJs5NDhcB67necQn1WCpJX2YMfWZ4rYi1DFKlkNA=",
-    "price": "$405.24",
-    "rating": 472.25
-  },
-  {
-    "id": "66fbc33afc13ae45014fde21",
-    "title": "Puree - Blackcurrant",
-    "type": "meat",
-    "description": "Piping - Bags Quizna",
-    "filename": "https://media.istockphoto.com/id/1206806317/vector/shopping-cart-icon-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=1RRQJs5NDhcB67necQn1WCpJX2YMfWZ4rYi1DFKlkNA=",
-    "price": "$220.06",
-    "rating": 348.8
-  },
-  {
-    "id": "66fbc33afc13ae45014fde22",
-    "title": "Lettuce - Baby Salad Greens",
-    "type": "utilities",
-    "description": "Lettuce - Romaine, Heart",
-    "filename": "https://media.istockphoto.com/id/1206806317/vector/shopping-cart-icon-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=1RRQJs5NDhcB67necQn1WCpJX2YMfWZ4rYi1DFKlkNA=",
-    "price": "$75.85",
-    "rating": 30.11
-  },
-  {
-    "id": "66fbc33afc13ae45014fde23",
-    "title": "Dish Towel",
-    "type": "utilities",
-    "description": "Puree - Mocha",
-    "filename": "https://media.istockphoto.com/id/1206806317/vector/shopping-cart-icon-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=1RRQJs5NDhcB67necQn1WCpJX2YMfWZ4rYi1DFKlkNA=",
-    "price": "$303.45",
-    "rating": 447.76
-  },
-  {
-    "id": "66fbc33afc13ae45014fde24",
-    "title": "Oil - Food, Lacquer Spray",
-    "type": "breakfast",
-    "description": "Spoon - Soup, Plastic",
-    "filename": "https://media.istockphoto.com/id/1206806317/vector/shopping-cart-icon-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=1RRQJs5NDhcB67necQn1WCpJX2YMfWZ4rYi1DFKlkNA=",
-    "price": "$377.99",
-    "rating": 351.9
-  },
-  {
-    "id": "66fbc33afc13ae45014fde25",
-    "title": "Miso Paste White",
-    "type": "soft-drinks",
-    "description": "Fruit Salad Deluxe",
-    "filename": "https://media.istockphoto.com/id/1206806317/vector/shopping-cart-icon-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=1RRQJs5NDhcB67necQn1WCpJX2YMfWZ4rYi1DFKlkNA=",
-    "price": "$174.66",
-    "rating": 52.24
-  },
-  {
-    "id": "66fbc33afc13ae45014fde26",
-    "title": "Beef - Top Sirloin",
-    "type": "soft-drinks",
-    "description": "The Pop Shoppe - Black Cherry",
-    "filename": "https://media.istockphoto.com/id/1206806317/vector/shopping-cart-icon-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=1RRQJs5NDhcB67necQn1WCpJX2YMfWZ4rYi1DFKlkNA=",
-    "price": "$121.61",
-    "rating": 37.04
-  },
-  {
-    "id": "66fbc33afc13ae45014fde27",
-    "title": "Sprouts - Brussel",
-    "type": "bakery",
-    "description": "Vanilla Beans",
-    "filename": "https://media.istockphoto.com/id/1206806317/vector/shopping-cart-icon-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=1RRQJs5NDhcB67necQn1WCpJX2YMfWZ4rYi1DFKlkNA=",
-    "price": "$453.30",
-    "rating": 496.45
-  },
-  {
-    "id": "66fbc33afc13ae45014fde28",
-    "title": "Sterno - Chafing Dish Fuel",
-    "type": "meat",
-    "description": "Soup - Knorr, Chicken Noodle",
-    "filename": "https://media.istockphoto.com/id/1206806317/vector/shopping-cart-icon-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=1RRQJs5NDhcB67necQn1WCpJX2YMfWZ4rYi1DFKlkNA=",
-    "price": "$90.33",
-    "rating": 40.13
-  },
-  {
-    "id": "66fbc33afc13ae45014fde29",
-    "title": "Sauce - Caesar Dressing",
-    "type": "bakery",
-    "description": "Beer - Sleemans Cream Ale",
-    "filename": "https://media.istockphoto.com/id/1206806317/vector/shopping-cart-icon-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=1RRQJs5NDhcB67necQn1WCpJX2YMfWZ4rYi1DFKlkNA=",
-    "price": "$123.78",
-    "rating": 295.52
-  },
-  {
-    "id": "66fbc33afc13ae45014fde2a",
-    "title": "Eggroll",
-    "type": "dairy",
-    "description": "Vinegar - Sherry",
-    "filename": "https://media.istockphoto.com/id/1206806317/vector/shopping-cart-icon-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=1RRQJs5NDhcB67necQn1WCpJX2YMfWZ4rYi1DFKlkNA=",
-    "price": "$64.15",
-    "rating": 379.0
-  },
-  {
-    "id": "66fbc33afc13ae45014fde2b",
-    "title": "Ice Cream Bar - Oreo Sandwich",
-    "type": "utilities",
-    "description": "Hold Up Tool Storage Rack",
-    "filename": "https://media.istockphoto.com/id/1206806317/vector/shopping-cart-icon-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=1RRQJs5NDhcB67necQn1WCpJX2YMfWZ4rYi1DFKlkNA=",
-    "price": "$204.94",
-    "rating": 341.93
-  },
-  {
-    "id": "66fbc33afc13ae45014fde2c",
-    "title": "Beef - Eye Of Round",
-    "type": "breakfast",
-    "description": "Appetizer - Lobster Phyllo Roll",
-    "filename": "https://media.istockphoto.com/id/1206806317/vector/shopping-cart-icon-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=1RRQJs5NDhcB67necQn1WCpJX2YMfWZ4rYi1DFKlkNA=",
-    "price": "$14.99",
-    "rating": 288.47
-  },
-  {
-    "id": "66fbc33afc13ae45014fde2d",
-    "title": "Spice - Montreal Steak Spice",
-    "type": "breakfast",
-    "description": "Gatorade - Orange",
-    "filename": "https://media.istockphoto.com/id/1206806317/vector/shopping-cart-icon-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=1RRQJs5NDhcB67necQn1WCpJX2YMfWZ4rYi1DFKlkNA=",
-    "price": "$327.24",
-    "rating": 265.01
-  },
-  {
-    "id": "66fbc33afc13ae45014fde2e",
-    "title": "Macaroons - Homestyle Two Bit",
-    "type": "utilities",
-    "description": "Eel - Smoked",
-    "filename": "https://media.istockphoto.com/id/1206806317/vector/shopping-cart-icon-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=1RRQJs5NDhcB67necQn1WCpJX2YMfWZ4rYi1DFKlkNA=",
-    "price": "$337.68",
-    "rating": 122.45
-  },
-  {
-    "id": "66fbc33afc13ae45014fde2f",
-    "title": "Ice Cream - Life Savers",
-    "type": "soft-drinks",
-    "description": "Goulash Seasoning",
-    "filename": "https://media.istockphoto.com/id/1206806317/vector/shopping-cart-icon-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=1RRQJs5NDhcB67necQn1WCpJX2YMfWZ4rYi1DFKlkNA=",
-    "price": "$78.34",
-    "rating": 28.94
-  },
-  {
-    "id": "66fbc33afc13ae45014fde30",
-    "title": "Pasta - Penne, Rigate, Dry",
-    "type": "bakery",
-    "description": "Beer - Maudite",
-    "filename": "https://media.istockphoto.com/id/1206806317/vector/shopping-cart-icon-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=1RRQJs5NDhcB67necQn1WCpJX2YMfWZ4rYi1DFKlkNA=",
-    "price": "$475.27",
-    "rating": 240.29
-  },
-  {
-    "id": "66fbc33afc13ae45014fde31",
-    "title": "Chivas Regal - 12 Year Old",
-    "type": "vegetable",
-    "description": "Sobe - Cranberry Grapefruit",
-    "filename": "https://media.istockphoto.com/id/1206806317/vector/shopping-cart-icon-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=1RRQJs5NDhcB67necQn1WCpJX2YMfWZ4rYi1DFKlkNA=",
-    "price": "$355.42",
-    "rating": 296.15
-  },
-  {
-    "id": "66fbc33afc13ae45014fde32",
-    "title": "Pie Shell - 9",
-    "type": "soft-drinks",
-    "description": "Wine - Sake",
-    "filename": "https://media.istockphoto.com/id/1206806317/vector/shopping-cart-icon-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=1RRQJs5NDhcB67necQn1WCpJX2YMfWZ4rYi1DFKlkNA=",
-    "price": "$13.02",
-    "rating": 172.97
-  },
-  {
-    "id": "66fbc33afc13ae45014fde33",
-    "title": "Longos - Grilled Chicken With",
-    "type": "bakery",
-    "description": "Pork - Liver",
-    "filename": "https://media.istockphoto.com/id/1206806317/vector/shopping-cart-icon-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=1RRQJs5NDhcB67necQn1WCpJX2YMfWZ4rYi1DFKlkNA=",
-    "price": "$440.83",
-    "rating": 42.29
-  },
-  {
-    "id": "66fbc33afc13ae45014fde34",
-    "title": "Coffee Caramel Biscotti",
-    "type": "vegetable",
-    "description": "Pork - Loin, Bone - In",
-    "filename": "https://media.istockphoto.com/id/1206806317/vector/shopping-cart-icon-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=1RRQJs5NDhcB67necQn1WCpJX2YMfWZ4rYi1DFKlkNA=",
-    "price": "$347.55",
-    "rating": 129.76
-  },
-  {
-    "id": "66fbc33afc13ae45014fde35",
-    "title": "Cheese - Valancey",
-    "type": "dairy",
-    "description": "Kaffir Lime Leaves",
-    "filename": "https://media.istockphoto.com/id/1206806317/vector/shopping-cart-icon-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=1RRQJs5NDhcB67necQn1WCpJX2YMfWZ4rYi1DFKlkNA=",
-    "price": "$248.76",
-    "rating": 178.79
-  },
-  {
-    "id": "66fbc33afc13ae45014fde36",
-    "title": "Whmis Spray Bottle Graduated",
-    "type": "vegetable",
-    "description": "Soup - Campbells, Lentil",
-    "filename": "https://media.istockphoto.com/id/1206806317/vector/shopping-cart-icon-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=1RRQJs5NDhcB67necQn1WCpJX2YMfWZ4rYi1DFKlkNA=",
-    "price": "$242.65",
-    "rating": 311.82
-  },
-  {
-    "id": "66fbc33afc13ae45014fde37",
-    "title": "Soup - Base Broth Chix",
-    "type": "meat",
-    "description": "Salt And Pepper Mix - Black",
-    "filename": "https://media.istockphoto.com/id/1206806317/vector/shopping-cart-icon-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=1RRQJs5NDhcB67necQn1WCpJX2YMfWZ4rYi1DFKlkNA=",
-    "price": "$494.30",
-    "rating": 337.94
-  },
-  {
-    "id": "66fbc33afc13ae45014fde38",
-    "title": "Beef - Outside, Round",
-    "type": "utilities",
-    "description": "Pastry - Chocolate Marble Tea",
-    "filename": "https://media.istockphoto.com/id/1206806317/vector/shopping-cart-icon-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=1RRQJs5NDhcB67necQn1WCpJX2YMfWZ4rYi1DFKlkNA=",
-    "price": "$188.08",
-    "rating": 265.85
-  },
-  {
-    "id": "66fbc33afc13ae45014fde39",
-    "title": "Crush - Orange, 355ml",
-    "type": "vegetable",
-    "description": "Cookie Double Choco",
-    "filename": "https://media.istockphoto.com/id/1206806317/vector/shopping-cart-icon-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=1RRQJs5NDhcB67necQn1WCpJX2YMfWZ4rYi1DFKlkNA=",
-    "price": "$259.41",
-    "rating": 16.66
-  },
-  {
-    "id": "66fbc33afc13ae45014fde3a",
-    "title": "Bag Clear 10 Lb",
-    "type": "dairy",
-    "description": "Icecream - Dstk Cml And Fdg",
-    "filename": "https://media.istockphoto.com/id/1206806317/vector/shopping-cart-icon-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=1RRQJs5NDhcB67necQn1WCpJX2YMfWZ4rYi1DFKlkNA=",
-    "price": "$35.00",
-    "rating": 232.05
-  },
-  {
-    "id": "66fbc33afc13ae45014fde3b",
-    "title": "Pop - Club Soda Can",
-    "type": "bakery",
-    "description": "Wine - Winzer Krems Gruner",
-    "filename": "https://media.istockphoto.com/id/1206806317/vector/shopping-cart-icon-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=1RRQJs5NDhcB67necQn1WCpJX2YMfWZ4rYi1DFKlkNA=",
-    "price": "$44.02",
-    "rating": 367.31
-  },
-  {
-    "id": "66fbc33afc13ae45014fde3c",
-    "title": "Nut - Walnut, Chopped",
-    "type": "vegetable",
-    "description": "Lamb - Leg, Diced",
-    "filename": "https://media.istockphoto.com/id/1206806317/vector/shopping-cart-icon-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=1RRQJs5NDhcB67necQn1WCpJX2YMfWZ4rYi1DFKlkNA=",
-    "price": "$258.50",
-    "rating": 128.95
-  },
-  {
-    "id": "66fbc33afc13ae45014fde3d",
-    "title": "Browning Caramel Glace",
-    "type": "soft-drinks",
-    "description": "Longos - Grilled Chicken With",
-    "filename": "https://media.istockphoto.com/id/1206806317/vector/shopping-cart-icon-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=1RRQJs5NDhcB67necQn1WCpJX2YMfWZ4rYi1DFKlkNA=",
-    "price": "$481.47",
-    "rating": 103.39
-  },
-  {
-    "id": "66fbc33afc13ae45014fde3e",
-    "title": "Pepper Squash",
-    "type": "meat",
-    "description": "Juice - Happy Planet",
-    "filename": "https://media.istockphoto.com/id/1206806317/vector/shopping-cart-icon-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=1RRQJs5NDhcB67necQn1WCpJX2YMfWZ4rYi1DFKlkNA=",
-    "price": "$430.53",
-    "rating": 51.12
-  },
-  {
-    "id": "66fbc33afc13ae45014fde3f",
-    "title": "Red Currants",
-    "type": "dairy",
-    "description": "Raspberries - Frozen",
-    "filename": "https://media.istockphoto.com/id/1206806317/vector/shopping-cart-icon-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=1RRQJs5NDhcB67necQn1WCpJX2YMfWZ4rYi1DFKlkNA=",
-    "price": "$24.24",
-    "rating": 216.33
-  },
-  {
-    "id": "66fbc33afc13ae45014fde40",
-    "title": "Appetizer - Southwestern",
-    "type": "breakfast",
-    "description": "Icecream Bar - Del Monte",
-    "filename": "https://media.istockphoto.com/id/1206806317/vector/shopping-cart-icon-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=1RRQJs5NDhcB67necQn1WCpJX2YMfWZ4rYi1DFKlkNA=",
-    "price": "$325.69",
-    "rating": 74.57
-  },
-  {
-    "id": "66fbc33afc13ae45014fde41",
-    "title": "Catfish - Fillets",
-    "type": "vegan",
-    "description": "Nantuket Peach Orange",
-    "filename": "https://media.istockphoto.com/id/1206806317/vector/shopping-cart-icon-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=1RRQJs5NDhcB67necQn1WCpJX2YMfWZ4rYi1DFKlkNA=",
-    "price": "$25.86",
-    "rating": 310.88
-  },
-  {
-    "id": "66fbc33afc13ae45014fde42",
-    "title": "Sobe - Tropical Energy",
-    "type": "utilities",
-    "description": "Pineapple - Golden",
-    "filename": "https://media.istockphoto.com/id/1206806317/vector/shopping-cart-icon-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=1RRQJs5NDhcB67necQn1WCpJX2YMfWZ4rYi1DFKlkNA=",
-    "price": "$267.19",
-    "rating": 375.16
-  },
-  {
-    "id": "66fbc33afc13ae45014fde43",
-    "title": "Leeks - Large",
-    "type": "vegan",
-    "description": "Pesto - Primerba, Paste",
-    "filename": "https://media.istockphoto.com/id/1206806317/vector/shopping-cart-icon-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=1RRQJs5NDhcB67necQn1WCpJX2YMfWZ4rYi1DFKlkNA=",
-    "price": "$274.95",
-    "rating": 227.3
-  },
-  {
-    "id": "66fbc33afc13ae45014fde44",
-    "title": "Tray - 16in Rnd Blk",
-    "type": "breakfast",
-    "description": "Parasol Pick Stir Stick",
-    "filename": "https://media.istockphoto.com/id/1206806317/vector/shopping-cart-icon-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=1RRQJs5NDhcB67necQn1WCpJX2YMfWZ4rYi1DFKlkNA=",
-    "price": "$341.55",
-    "rating": 15.74
-  },
-  {
-    "id": "66fbc33afc13ae45014fde45",
-    "title": "Soup - Campbells - Chicken Noodle",
-    "type": "breakfast",
-    "description": "Wiberg Cure",
-    "filename": "https://media.istockphoto.com/id/1206806317/vector/shopping-cart-icon-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=1RRQJs5NDhcB67necQn1WCpJX2YMfWZ4rYi1DFKlkNA=",
-    "price": "$79.20",
-    "rating": 100.64
-  },
-  {
-    "id": "66fbc33afc13ae45014fde46",
-    "title": "Spice - Paprika",
-    "type": "breakfast",
-    "description": "Chocolate - Chips Compound",
-    "filename": "https://media.istockphoto.com/id/1206806317/vector/shopping-cart-icon-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=1RRQJs5NDhcB67necQn1WCpJX2YMfWZ4rYi1DFKlkNA=",
-    "price": "$286.36",
-    "rating": 490.29
-  },
-  {
-    "id": "66fbc33afc13ae45014fde47",
-    "title": "Squash - Pattypan, Yellow",
-    "type": "soft-drinks",
-    "description": "Fork - Plastic",
-    "filename": "https://media.istockphoto.com/id/1206806317/vector/shopping-cart-icon-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=1RRQJs5NDhcB67necQn1WCpJX2YMfWZ4rYi1DFKlkNA=",
-    "price": "$410.23",
-    "rating": 119.32
-  },
-  {
-    "id": "66fbc33afc13ae45014fde48",
-    "title": "Tomatoes Tear Drop Yellow",
-    "type": "utilities",
-    "description": "Cookies Cereal Nut",
-    "filename": "https://media.istockphoto.com/id/1206806317/vector/shopping-cart-icon-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=1RRQJs5NDhcB67necQn1WCpJX2YMfWZ4rYi1DFKlkNA=",
-    "price": "$62.26",
-    "rating": 82.39
-  },
-  {
-    "id": "66fbc33afc13ae45014fde49",
-    "title": "Chocolate - Milk Coating",
-    "type": "breakfast",
-    "description": "Bread Foccacia Whole",
-    "filename": "https://media.istockphoto.com/id/1206806317/vector/shopping-cart-icon-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=1RRQJs5NDhcB67necQn1WCpJX2YMfWZ4rYi1DFKlkNA=",
-    "price": "$450.46",
-    "rating": 204.79
-  },
-  {
-    "id": "66fbc33afc13ae45014fde4a",
-    "title": "Longos - Chicken Wings",
-    "type": "meat",
-    "description": "Burger Veggie",
-    "filename": "https://media.istockphoto.com/id/1206806317/vector/shopping-cart-icon-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=1RRQJs5NDhcB67necQn1WCpJX2YMfWZ4rYi1DFKlkNA=",
-    "price": "$363.32",
-    "rating": 396.43
-  },
-  {
-    "id": "66fbc33afc13ae45014fde4b",
-    "title": "Cheese - Parmesan Grated",
-    "type": "vegetable",
-    "description": "Flour - Corn, Fine",
-    "filename": "https://media.istockphoto.com/id/1206806317/vector/shopping-cart-icon-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=1RRQJs5NDhcB67necQn1WCpJX2YMfWZ4rYi1DFKlkNA=",
-    "price": "$312.51",
-    "rating": 131.17
-  },
-  {
-    "id": "66fbc33afc13ae45014fde4c",
-    "title": "Table Cloth 62x114 White",
-    "type": "bakery",
-    "description": "Longos - Assorted Sandwich",
-    "filename": "https://media.istockphoto.com/id/1206806317/vector/shopping-cart-icon-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=1RRQJs5NDhcB67necQn1WCpJX2YMfWZ4rYi1DFKlkNA=",
-    "price": "$382.12",
-    "rating": 368.49
-  },
-  {
-    "id": "66fbc33afc13ae45014fde4d",
-    "title": "Pork - Backfat",
-    "type": "vegan",
-    "description": "Mountain Dew",
-    "filename": "https://media.istockphoto.com/id/1206806317/vector/shopping-cart-icon-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=1RRQJs5NDhcB67necQn1WCpJX2YMfWZ4rYi1DFKlkNA=",
-    "price": "$264.44",
-    "rating": 214.38
-  },
-  {
-    "id": "66fbc33afc13ae45014fde4e",
-    "title": "Juice - V8 Splash",
-    "type": "vegan",
-    "description": "Tilapia - Fillets",
-    "filename": "https://media.istockphoto.com/id/1206806317/vector/shopping-cart-icon-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=1RRQJs5NDhcB67necQn1WCpJX2YMfWZ4rYi1DFKlkNA=",
-    "price": "$103.27",
-    "rating": 18.74
-  },
-  {
-    "id": "66fbc33afc13ae45014fde4f",
-    "title": "Bread - Sticks, Thin, Plain",
-    "type": "vegan",
-    "description": "Ice - Clear, 300 Lb For Carving",
-    "filename": "https://media.istockphoto.com/id/1206806317/vector/shopping-cart-icon-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=1RRQJs5NDhcB67necQn1WCpJX2YMfWZ4rYi1DFKlkNA=",
-    "price": "$466.92",
-    "rating": 143.75
-  },
-  {
-    "id": "66fbc33afc13ae45014fde50",
-    "title": "Parasol Pick Stir Stick",
-    "type": "utilities",
-    "description": "Spice - Paprika",
-    "filename": "https://media.istockphoto.com/id/1206806317/vector/shopping-cart-icon-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=1RRQJs5NDhcB67necQn1WCpJX2YMfWZ4rYi1DFKlkNA=",
-    "price": "$52.11",
-    "rating": 363.47
-  },
-  {
-    "id": "66fbc33afc13ae45014fde51",
-    "title": "Lettuce - Baby Salad Greens",
-    "type": "vegetable",
-    "description": "Cornish Hen",
-    "filename": "https://media.istockphoto.com/id/1206806317/vector/shopping-cart-icon-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=1RRQJs5NDhcB67necQn1WCpJX2YMfWZ4rYi1DFKlkNA=",
-    "price": "$68.00",
-    "rating": 401.19
-  },
-  {
-    "id": "66fbc33afc13ae45014fde52",
-    "title": "Lid - 3oz Med Rec",
-    "type": "breakfast",
-    "description": "Basil - Seedlings Cookstown",
-    "filename": "https://media.istockphoto.com/id/1206806317/vector/shopping-cart-icon-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=1RRQJs5NDhcB67necQn1WCpJX2YMfWZ4rYi1DFKlkNA=",
-    "price": "$475.82",
-    "rating": 284.25
-  },
-  {
-    "id": "66fbc33afc13ae45014fde53",
-    "title": "Triple Sec - Mcguinness",
-    "type": "meat",
-    "description": "Wine - Spumante Bambino White",
-    "filename": "https://media.istockphoto.com/id/1206806317/vector/shopping-cart-icon-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=1RRQJs5NDhcB67necQn1WCpJX2YMfWZ4rYi1DFKlkNA=",
-    "price": "$300.67",
-    "rating": 404.45
   }
 ]

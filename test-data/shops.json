@@ -7,7 +7,7 @@
       "operating_hours": "8:00 AM - 10:00 PM",
       "location": "Harare, Zimbabwe",
       "lat": -17.8292,
-      "long": 31.0522,
+      "long": 31.0710,
       "rating": 4.3,
       "categories": ["Grocery", "Household", "Electronics"]
     },
@@ -31,7 +31,7 @@
       "operating_hours": "10:00 AM - 11:00 PM",
       "location": "Harare, Zimbabwe",
       "lat": -17.8292,
-      "long": 31.0522,
+      "long": 31.0622,
       "rating": 4.5,
       "categories": ["Fast Food", "Restaurant"]
     },
@@ -55,7 +55,7 @@
       "operating_hours": "10:00 AM - 10:00 PM",
       "location": "Harare, Zimbabwe",
       "lat": -17.8292,
-      "long": 31.0522,
+      "long": 31.1522,
       "rating": 4.4,
       "categories": ["Fast Food", "Restaurant"]
     },
@@ -79,7 +79,7 @@
       "operating_hours": "10:00 AM - 10:00 PM",
       "location": "Mutare, Zimbabwe",
       "lat": -18.9707,
-      "long": 32.6709,
+      "long": 31.6809,
       "rating": 4.0,
       "categories": ["Fast Food", "Restaurant"]
     },
@@ -103,7 +103,7 @@
       "operating_hours": "10:00 AM - 8:00 PM",
       "location": "Harare, Zimbabwe",
       "lat": -17.8292,
-      "long": 31.0522,
+      "long": 31.0922,
       "rating": 4.6,
       "categories": ["Clothing", "Sportswear"]
     },
@@ -115,7 +115,7 @@
       "operating_hours": "10:00 AM - 8:00 PM",
       "location": "Harare, Zimbabwe",
       "lat": -17.8292,
-      "long": 31.0522,
+      "long": 31.0539,
       "rating": 4.7,
       "categories": ["Clothing", "Sportswear"]
     },
@@ -127,9 +127,8 @@
       "operating_hours": "10:00 AM - 9:00 PM",
       "location": "Harare, Zimbabwe",
       "lat": -17.8292,
-      "long": 31.0522,
+      "long": 31.2562,
       "rating": 4.8,
-      "categories": ["Electronics", "Technology"]
+      "categories": ["Hardware", "Electronics", "Technology"]
     }
   ]
-  
