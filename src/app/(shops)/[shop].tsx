@@ -1,9 +1,8 @@
 import { useRouter } from 'expo-router';
 import React, { useEffect, useState, useRef, useMemo } from 'react';
-import { View, Image, Text, ActivityIndicator, TouchableOpacity, Pressable, ScrollView, TextInput} from 'react-native';
+import { View, Image, Text, ActivityIndicator, TouchableOpacity, Pressable, ScrollView, TextInput, ImageBackground} from 'react-native';
 import { useLocalSearchParams, Link } from 'expo-router';
 import BottomSheet from '@gorhom/bottom-sheet';
-// import {ErrorPage} from '@/components/errorPage';
 import { shopNotFound } from '@/assets/images';
 import { InformationModal } from '@/components/modals';
 import { Ionicons, MaterialIcons } from '@expo/vector-icons';
@@ -13,7 +12,6 @@ import Entypo from '@expo/vector-icons/Entypo';
 import Fontisto from '@expo/vector-icons/Fontisto';
 import Feather from '@expo/vector-icons/Feather';
 import { SearchInput } from '@/components/searchInput';
-
 
 type GroceryItem = {
   id: string;
@@ -47,7 +45,7 @@ function Shop() {
   const [isScrolling, setIsScrolling] = useState(false);
   const scrollTimeout = useRef(null);
 
-  
+  const [groceries, setGroceries] = useState([])
   
   const handleScroll = () => {
     if (scrollTimeout.current) {
@@ -56,7 +54,7 @@ function Shop() {
     setIsScrolling(true);
     scrollTimeout.current = setTimeout(() => {
       setIsScrolling(false);
-    }, 4000);
+    }, 2000);
   };
 
   const totalPrice = Math.round(
@@ -97,11 +95,28 @@ function Shop() {
   useEffect(() => {
     const fetchShopDetails = async () => {
       try {
-        const data = await require('../../../test-data/shops.json');
-        const foundShop = data.find((s: any) => s.id === _shop.shop);
-
+        const data = await import('../../../test-data/shops.json');
+        const foundShop = data.default.find((s: any) => s.id === _shop.shop);
+  
         if (foundShop) {
-          setShop(foundShop);
+          setShop(foundShop); 
+          try {
+            if (foundShop.categories.includes("Grocery")) {
+              const groceriesData = await import('../../../test-data/grocery.json');
+              setGroceries(groceriesData.default);
+            } else if (foundShop.categories.includes("Restaurant")) {
+              const menuData = await import('../../../test-data/menu.json');
+              setGroceries(menuData.default);
+            } else if (foundShop.categories.includes("Hardware")) {
+              const hardWareData = await import('../../../test-data/hardware.json');
+              setGroceries(hardWareData.default);
+            } else if (foundShop.categories.includes("Retail")) {
+              const retailData = await import('../../../test-data/retail.json');
+              setGroceries(retailData.default);
+            }
+          } catch (err) {
+            console.log(err);
+          }
         } else {
           setError('We are having trouble reaching the providers of this store.');
         }
@@ -111,10 +126,12 @@ function Shop() {
         setLoading(false);
       }
     };
+  
     fetchShopDetails();
   }, [_shop.shop]);
+  
 
-  const groceries: GroceryItem[] = require('../../../test-data/grocery.json');
+  
 
   const filteredGroceries = useMemo(() => groceries.filter(item => 
     item.title.toLowerCase().includes(searchQuery.toLowerCase())
@@ -134,11 +151,12 @@ function Shop() {
             <Text className="text-yellow-500/90 text-sm font-bold text-center mb-2">{message}</Text>
           )}
           <Text style={{ fontSize: 20, fontWeight: 'bold' }}>{selectedItem.title}</Text>
-          <Text style={{ marginVertical: 10 }}>{selectedItem.description}</Text>
-          <Text style={{ color: 'green', fontWeight: 'bold' }}>Price: ${selectedItem.price}</Text>
+          <Image source={{uri: selectedItem.filename}} width={250} height={50}/>
+          {/* <Text style={{ marginVertical: 10 }}>{selectedItem.description}</Text> */}
+          <Text style={{ color: 'green', fontWeight: 'bold' }} className='py-2'>Price: ${selectedItem.price}</Text>
           <Text className='text-blue-400/90 font-semibold text-sm'>Available Quantity: {selectedItem.quantity}</Text>
           <View className="w-full mt-5">
-            <View className="flex flex-row flex-wrap justify-center w-full mb-2">
+            <View className="flex flex-row flex-wrap justify-start w-full mb-2">
               <TouchableOpacity
                 onPress={() => (addToCart(selectedItem), showMessage(`Item ${selectedItem.title} has been added to your cart`))}
                 className="bg-slate-800/95 p-3 rounded-lg flex flex-row justify-center w-[150px]"
@@ -147,13 +165,8 @@ function Shop() {
                 <Text className="text-white mt-1">Add To Cart</Text>
               </TouchableOpacity>
 
-              <TouchableOpacity
-                onPress={() => (removeFromCart(selectedItem), showMessage(`Item ${selectedItem.title} has been removed to your cart`))}
-                className="bg-slate-800/95 p-3 mx-2 rounded-lg flex flex-row justify-center"
-              >
-                <Feather name="arrow-down" size={22} className='mx-2' color="red" />
-                <Text className="text-white mt-1">remove from cart</Text>
-              </TouchableOpacity>
+              <Feather name="arrow-up" size={32} className='mx-4' color="blue" onPress={() => (addToCart(selectedItem), showMessage(`Item ${selectedItem.title} has been added to your cart`))} />
+              <Feather name="arrow-down" size={32} color="red" onPress={() => (removeFromCart(selectedItem), showMessage(`Item ${selectedItem.title} has been removed from your cart`))} />
             </View>
 
             <TouchableOpacity
@@ -176,27 +189,25 @@ function Shop() {
             <Text className='text-md font-semibold text-center'>Related Items</Text>
               <ScrollView 
                      horizontal 
-                     showsHorizontalScrollIndicator={false} // Hides the scrollbar for a cleaner look
+                     showsHorizontalScrollIndicator={false} // Hides the horizontal scrollbar 
                      contentContainerStyle={{ padding:20, marginHorizontal: 5 }}
                    >
-                    <View className='flex flex-row justify-start'>
+                <ImageBackground source={{ uri: selectedItem.filename }} style={{ width: '100%', padding: 5, borderRadius: "15px" }} >
+                    <View className='flex flex-row justify-start items-center h-40'>
                       {relatedGroceries && relatedGroceries.map((item) => (
                         <TouchableOpacity
                           onPress={() => openBottomSheet(item)}
                           key={item.id}
-                          className="items-center p-3 bg-blue-400/10 dark:bg-gray-700/80 mx-2 my-3 rounded-xl"
+                          className="items-center p-5 bg-blue-500/40 dark:bg-gray-700/80 mx-2 my-3 rounded-xl"
                         >
-                          <Image
-                            source={{ uri: item.filename }}
-                            className="w-30 h-20 rounded-lg"
-                          />
-                          <Text className="mt-2 text-sm font-bold text-gray-800 dark:text-gray-300 text-center">
+                          <Text className="mt-2 text-sm font-bold text-gray-100 dark:text-gray-300 text-center">
                             {item.title.length > 20 ? `${item.title.substring(0, 20)}...` : item.title}
                           </Text>
-                          <Text className="mt-2 text-sm font-bold text-gray-800 dark:text-white text-center"> ${item.price}</Text>
+                          <Text className="mt-2 text-sm font-bold text-green-500/90 dark:text-white text-center"> ${item.price}</Text>
                           </TouchableOpacity>
                               ))}
                         </View>  
+                  </ImageBackground>
                   </ScrollView>
           </View>
         </>
@@ -210,7 +221,7 @@ function Shop() {
   };
 
   if (loading) {
-    return <ActivityIndicator size="large" color="#000ff" />;
+    return <ActivityIndicator size="large" color="#60a5fa" className='m-auto' animating />;
   }
 
   if (error) {
@@ -243,7 +254,7 @@ function Shop() {
   }
 
   return (
-    <View style={{ flex: 1 }} className='bg-white/10 dark:bg-gray-700'>
+    <View style={{ flex: 1 }} className='bg-white/10 dark:bg-gray-900'>
       {isScrolling && (
         <View className='flex flex-row justify-between items-start'>
           <SearchInput searchQuery={searchQuery} setSearchQuery={setSearchQuery} iconColor={"white"} classStyle={"bg-slate-600/80 dark:bg-gray-300/10 mt-5 ml-2 mb-4 text-white"} inputClassStyle='text-slate-200 placeholder:text-slate-400' placeholder={"Search in store?"} />      
@@ -285,9 +296,9 @@ function Shop() {
 
           <View className="flex flex-row justify-between px-2 mt-2">
             <Text className="font-semibold text-sm text-blue-400">Welcome to: {shop.name}</Text>
-            <Text className="font-semibold text-sm text-slate-700" >
+            <Text className="font-semibold text-sm text-slate-700 dark:text-white" >
               We are currently:
-              <Text className="text-yellow-400/80"> {shop.status}</Text>
+              <Text className="text-yellow-400"> {shop.status}</Text>
             </Text>
           </View>
             <SearchInput searchQuery={searchQuery} setSearchQuery={setSearchQuery} iconColor={"white"} classStyle={"bg-slate-600/80 mt-5 dark:bg-gray-300/10 text-white mx-auto"} inputClassStyle='text-slate-200 placeholder:text-slate-400' placeholder={"what would you like to buy?"} />
@@ -298,7 +309,7 @@ function Shop() {
             {filteredGroceries.map((item) => (
               <View
                 key={item.id}
-                className="w-1/3 items-center p-3 bg-blue-400/10 dark:bg-transparent/20 mx-2 my-3 rounded-xl z-100"
+                className="w-1/3 items-center p-3 bg-blue-500/30 dark:bg-transparent/90 mx-2 my-3 rounded-xl z-100"
               >
                 <TouchableOpacity onPress={() => openBottomSheet(item)}>
                   <Image

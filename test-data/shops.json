@@ -1,5 +1,29 @@
 [
     { 
+      "id": "9", 
+      "name": "CHICKEN INN", 
+      "image": { "uri": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMhDw5gpq4p_aQdGE5F7m8TyLQ-8vDhqUv7g&s" },
+      "status": "open",
+      "operating_hours": "10:00 AM - 11:00 PM",
+      "location": "Harare, Zimbabwe",
+      "lat": -17.8292,
+      "long": 31.0622,
+      "rating": 4.5,
+      "categories": ["Fast Food", "Restaurant"]
+    },
+    { 
+      "id": "11", 
+      "name": "PIZZA INN", 
+      "image": { "uri": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh1DbqWQ4DcQm1-aOgCpx6UhGMYlnoIiK96w&s" },
+      "status": "closed",
+      "operating_hours": "10:00 AM - 10:00 PM",
+      "location": "Mutare, Zimbabwe",
+      "lat": -18.9707,
+      "long": 31.6809,
+      "rating": 4.0,
+      "categories": ["Fast Food", "Restaurant"]
+    },
+    { 
       "id": "1", 
       "name": "OK MART", 
       "image": { "uri": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQW01CZel1IHCWo5hk5GMQj4zsO466MPMMIpOSQWVKHjntxMnjCmw5I1NjtalQ9--uKwCE&usqp=CAU" },
@@ -21,18 +45,18 @@
       "lat": -20.1328,
       "long": 28.6265,
       "rating": 4.0,
-      "categories": ["Grocery", "Bakery"]
+      "categories": ["Hardware", "Bakery"]
     },
     { 
-      "id": "9", 
-      "name": "CHICKEN INN", 
-      "image": { "uri": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMhDw5gpq4p_aQdGE5F7m8TyLQ-8vDhqUv7g&s" },
+      "id": "10", 
+      "name": "CHICKEN SLICE", 
+      "image": { "uri": "https://chickenslice.com/wp-content/uploads/2019/09/chicken-slice-300x300.jpg" },
       "status": "open",
-      "operating_hours": "10:00 AM - 11:00 PM",
+      "operating_hours": "10:00 AM - 10:00 PM",
       "location": "Harare, Zimbabwe",
       "lat": -17.8292,
-      "long": 31.0622,
-      "rating": 4.5,
+      "long": 31.1522,
+      "rating": 4.4,
       "categories": ["Fast Food", "Restaurant"]
     },
     { 
@@ -48,18 +72,6 @@
       "categories": ["Grocery", "Electronics", "Clothing"]
     },
     { 
-      "id": "10", 
-      "name": "CHICKEN SLICE", 
-      "image": { "uri": "https://chickenslice.com/wp-content/uploads/2019/09/chicken-slice-300x300.jpg" },
-      "status": "open",
-      "operating_hours": "10:00 AM - 10:00 PM",
-      "location": "Harare, Zimbabwe",
-      "lat": -17.8292,
-      "long": 31.1522,
-      "rating": 4.4,
-      "categories": ["Fast Food", "Restaurant"]
-    },
-    { 
       "id": "2", 
       "name": "SPAR", 
       "image": { "uri": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQ7emNk0pnb1K-OoqpdPmR9IaWB6X8VvwJQA&s" },
@@ -72,18 +84,6 @@
       "categories": ["Grocery", "Household"]
     },
     { 
-      "id": "11", 
-      "name": "PIZZA INN", 
-      "image": { "uri": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh1DbqWQ4DcQm1-aOgCpx6UhGMYlnoIiK96w&s" },
-      "status": "closed",
-      "operating_hours": "10:00 AM - 10:00 PM",
-      "location": "Mutare, Zimbabwe",
-      "lat": -18.9707,
-      "long": 31.6809,
-      "rating": 4.0,
-      "categories": ["Fast Food", "Restaurant"]
-    },
-    { 
       "id": "8", 
       "name": "HARARE DRIP STORE", 
       "image": { "uri": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScSGK7CxfKQa298AVBDnHV2ta8tPpYo7uEbw&s" },
@@ -93,7 +93,7 @@
       "lat": -17.8292,
       "long": 31.0522,
       "rating": 3.9,
-      "categories": ["Clothing", "Fashion"]
+      "categories": ["Retail" ,"Clothing", "Fashion"]
     },
     { 
       "id": "3", 
@@ -105,7 +105,7 @@
       "lat": -17.8292,
       "long": 31.0922,
       "rating": 4.6,
-      "categories": ["Clothing", "Sportswear"]
+      "categories": ["Retail","Clothing", "Sportswear"]
     },
     { 
       "id": "4", 
@@ -117,7 +117,7 @@
       "lat": -17.8292,
       "long": 31.0539,
       "rating": 4.7,
-      "categories": ["Clothing", "Sportswear"]
+      "categories": ["Retail" ,"Clothing", "Sportswear"]
     },
     { 
       "id": "5", 

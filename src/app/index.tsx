@@ -31,7 +31,7 @@ export default function Page() {
   );
 
   return (
-    <View className="flex-1 bg-slate-200/90 dark:bg-gray-800">
+    <View className="flex-1 bg-slate-200/90 dark:bg-gray-900">
       <FlatList
         data={filteredShops}
         keyExtractor={(item) => item.id}
@@ -48,6 +48,7 @@ export default function Page() {
             <SearchInput searchQuery={searchQuery} setSearchQuery={setSearchQuery} iconColor={"white"} classStyle={"bg-gray-800/80 dark:bg-gray-300/20 my-3 mx-auto"} inputClassStyle="text-white placeholder:text-gray-400" placeholder={"Where would you like to shop today?"}/>
           </LinearGradient>
         )}
+        
         keyboardShouldPersistTaps="handled"
         contentContainerStyle={{ paddingBottom: 20 }}
         renderItem={({ item }) => (
