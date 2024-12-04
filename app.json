@@ -7,7 +7,43 @@
       "output": "static",
       "bundler": "metro"
     },
+    "build": {
+      "preview": {
+        "android": {
+          "buildType": "apk"
+        }
+      },
+      "preview2": {
+        "android": {
+          "buildType": "apk",
+          "gradleCommand": ":app:assembleRelease"
+        }
+      },
+      "preview3": {
+        "developmentClient": true
+      },
+      "preview4": {
+        "distribution": "internal"
+      },
+      "production": {}
+    },
     "plugins": [
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#000000",
+          "image": "./public/insinuatesBg1.png",
+          "height": "100%",
+          "imageWidth": 250
+        }
+      ],
+      [
+        "expo-video",
+        {
+          "supportsBackgroundPlayback": true,
+          "supportsPictureInPicture": true
+        }
+      ],
       [
         "expo-router",
         {
@@ -19,9 +55,28 @@
     "slug": "runner2",
     "extra": {
       "eas": {
-        "projectId": "04c8e328-a7ee-44b0-be09-cc10f20bc76c"
+        "projectId": "e402ae40-a973-4dc2-8b0e-acdd8bfe611b"
       }
     },
-    "owner": "shuan_s"
+    "icon": "./public/assets/images/runner-logo.png",
+    "owner": "shuan_s",
+    "android": {
+      "package": "com.shuan_s.runner2",
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "CAMERA",
+        "ACCESS_BACKGROUND_LOCATION"
+      ]
+    },
+    "ios": {
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "This app uses your location to display maps.",
+        "NSLocationAlwaysUsageDescription": "This app needs your location to provide navigation even when the app is closed.",
+        "NSCameraUsageDescription": "This app needs access to your camera."
+      },
+      "bundleIdentifier": "runner-first-ios-build"
+    },
+    "newArchEnabled": true
   }
 }

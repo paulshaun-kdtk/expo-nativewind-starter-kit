@@ -1,6 +1,6 @@
 import React from 'react'
-import { View, Text, Touchable, TouchableOpacity, Image } from 'react-native'
-import { Link, useRouter } from 'expo-router'
+import { View, Text, TouchableOpacity, Image } from 'react-native'
+import { useRouter } from 'expo-router'
 import { shopNotFound } from '@/assets/images';
 
 export const ErrorPage = ({error}) => { 

@@ -11,6 +11,7 @@ import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
 import Entypo from '@expo/vector-icons/Entypo';
 import Fontisto from '@expo/vector-icons/Fontisto';
 import Feather from '@expo/vector-icons/Feather';
+import { useColorScheme } from "react-native";
 import { SearchInput } from '@/components/searchInput';
 
 type GroceryItem = {
@@ -19,7 +20,7 @@ type GroceryItem = {
   type: string;
   image: string;
   filename: string;
-  price: string;
+  price: number;
   description: string;
   quantity: number;
 };
@@ -30,7 +31,7 @@ function Shop() {
   const [shop, setShop] = useState<any>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-  const [selectedItem, setSelectedItem] = useState<GroceryItem | null>(null);
+  const [selectedItem, setSelectedItem] = useState<GroceryItem | GroceryItem>(null);
   const [informationModal, setInformationModal] = useState(false);
   const [cartModal, setCartModal] = useState(false);
   const [contactModal, setContactModal] = useState(false);
@@ -40,7 +41,7 @@ function Shop() {
   const [searchQuery, setSearchQuery] = useState('');
 
   const bottomSheetRef = useRef<BottomSheet>(null);
-  const snapPoints = useMemo(() => ['45%', '90%'], []);
+  const snapPoints = useMemo(() => ['50%', '90%'], []);
 
   const [isScrolling, setIsScrolling] = useState(false);
   const scrollTimeout = useRef(null);
@@ -51,11 +52,18 @@ function Shop() {
     if (scrollTimeout.current) {
       clearTimeout(scrollTimeout.current);
     }
+
     setIsScrolling(true);
     scrollTimeout.current = setTimeout(() => {
       setIsScrolling(false);
-    }, 2000);
+    }, 3600);
   };
+
+  const colorScheme = useColorScheme();
+
+  const isDarkMode = colorScheme === "dark";
+
+  const bottomSheetBackgroundColor = { backgroundColor: isDarkMode ? "#1e293b" : "#ecfdf5" };
 
   const totalPrice = Math.round(
     itemsInCart.reduce((sum, item) => sum + item.price * item.quantity, 0) * 100
@@ -137,6 +145,12 @@ function Shop() {
     item.title.toLowerCase().includes(searchQuery.toLowerCase())
   ), [searchQuery, groceries]);
     
+  const groupedGroceries = filteredGroceries.reduce((acc, item) => {
+    if (!acc[item.type]) acc[item.type] = [];
+    acc[item.type].push(item);
+    return acc;
+  }, {});
+
   const relatedGroceries = groceries.filter(item => 
     selectedItem ? item.type === selectedItem.type : false
   );
@@ -148,31 +162,82 @@ function Shop() {
       {selectedItem && (
         <>
           {message && (
-            <Text className="text-yellow-500/90 text-sm font-bold text-center mb-2">{message}</Text>
+            <Text className="text-yellow-500/90 dark:text-yelow-400 text-sm font-bold text-center mb-2">
+              {message}
+            </Text>
           )}
-          <Text style={{ fontSize: 20, fontWeight: 'bold' }}>{selectedItem.title}</Text>
-          <Image source={{uri: selectedItem.filename}} width={250} height={50}/>
-          {/* <Text style={{ marginVertical: 10 }}>{selectedItem.description}</Text> */}
-          <Text style={{ color: 'green', fontWeight: 'bold' }} className='py-2'>Price: ${selectedItem.price}</Text>
-          <Text className='text-blue-400/90 font-semibold text-sm'>Available Quantity: {selectedItem.quantity}</Text>
+          <Text className='dark:text-white' style={{ fontSize: 20, fontWeight: 'bold' }}>
+            {selectedItem.title}
+          </Text>
+          <Image
+            source={{ uri: selectedItem.filename }}
+            style={{ width: 350, height: 100 }}
+          />
+          <Text className="text-green-500/90 dark:text-white font-extrabold py-2">
+            Price: ${selectedItem.price}
+          </Text>
           <View className="w-full mt-5">
             <View className="flex flex-row flex-wrap justify-start w-full mb-2">
               <TouchableOpacity
-                onPress={() => (addToCart(selectedItem), showMessage(`Item ${selectedItem.title} has been added to your cart`))}
-                className="bg-slate-800/95 p-3 rounded-lg flex flex-row justify-center w-[150px]"
+                onPress={() =>
+                  (addToCart(selectedItem), showMessage(`Item ${selectedItem.title} has been added to your cart`))
+                }
+                className="bg-slate-800/95 dark:bg-slate-500 p-3 rounded-lg flex flex-row justify-center w-[150px]"
               >
-                <Feather name="arrow-up" size={22} className='mx-2' color="white" />
+                <Feather name="arrow-up" size={22} className="mx-2" color="white" />
                 <Text className="text-white mt-1">Add To Cart</Text>
               </TouchableOpacity>
-
-              <Feather name="arrow-up" size={32} className='mx-4' color="blue" onPress={() => (addToCart(selectedItem), showMessage(`Item ${selectedItem.title} has been added to your cart`))} />
-              <Feather name="arrow-down" size={32} color="red" onPress={() => (removeFromCart(selectedItem), showMessage(`Item ${selectedItem.title} has been removed from your cart`))} />
+  
+              <Feather
+                name="arrow-up"
+                size={32}
+                className="mx-4"
+                color={ isDarkMode ? "#3b82f6" : "#10b981"}
+                onPress={() =>
+                  (addToCart(selectedItem), showMessage(`Item ${selectedItem.title} has been added to your cart`))
+                }
+              />
+              <Feather
+                name="arrow-down"
+                size={32}
+                color="red"
+                onPress={() =>
+                  (removeFromCart(selectedItem), showMessage(`Item ${selectedItem.title} has been removed from your cart`))
+                }
+              />
             </View>
-
+            <View className="mt-3 flex flex-row justify-start w-full">
+              <TouchableOpacity className="p-3 bg-slate-600 rounded-md">
+                <Text className="text-green-500">Total: ${totalPrice}</Text>
+              </TouchableOpacity>
+              <TouchableOpacity
+                className="bg-slate-700 ml-2 rounded-md  flex flex-row p-3 justify-evenly items-start"
+                onPress={() => setCartModal(true)}
+              >
+                <MaterialIcons name="shopping-cart" size={18} color="white" />
+                <Text className="text-white">View Cart</Text>
+              </TouchableOpacity>
+              <TouchableOpacity
+                  onPress={() => router.push('/')} 
+                  className="bg-gray-800/90 dark:bg-slate-700/20 py-3 px-4 rounded-lg ml-2 flex flex-row justify-center items-center">
+                  <Text className="text-yellow-400 font-medium"><Feather name="file-text" size={20} /> Checkout</Text>
+                </TouchableOpacity>
+              
+            </View>
+  
             <TouchableOpacity
-              onPress={() => setShowNote(!showNote)} 
-              className="bg-slate-600 py-3 px-4 rounded-lg flex flex-row justify-center items-center w-full">
-              <Text className="text-white font-medium"><MaterialCommunityIcons name="notebook-edit-outline" size={22} color="white" /> Attach note with item</Text>
+              onPress={() => setShowNote(!showNote)}
+              className="bg-slate-600 dark:bg-slate-400 mt-3 py-3 px-4 rounded-lg flex flex-row justify-center items-center w-full"
+            >
+              <Text className="text-white font-medium">
+                <MaterialCommunityIcons
+                  name="notebook-edit-outline"
+                  size={22}
+                  color="white"
+                  className="mr-2"
+                />
+                Attach note with item
+              </Text>
             </TouchableOpacity>
   
             {showNote && (
@@ -185,30 +250,37 @@ function Shop() {
               </View>
             )}
           </View>
-          <View className='mt-5'>
-            <Text className='text-md font-semibold text-center'>Related Items</Text>
-              <ScrollView 
-                     horizontal 
-                     showsHorizontalScrollIndicator={false} // Hides the horizontal scrollbar 
-                     contentContainerStyle={{ padding:20, marginHorizontal: 5 }}
-                   >
-                <ImageBackground source={{ uri: selectedItem.filename }} style={{ width: '100%', padding: 5, borderRadius: "15px" }} >
-                    <View className='flex flex-row justify-start items-center h-40'>
-                      {relatedGroceries && relatedGroceries.map((item) => (
-                        <TouchableOpacity
-                          onPress={() => openBottomSheet(item)}
-                          key={item.id}
-                          className="items-center p-5 bg-blue-500/40 dark:bg-gray-700/80 mx-2 my-3 rounded-xl"
-                        >
-                          <Text className="mt-2 text-sm font-bold text-gray-100 dark:text-gray-300 text-center">
-                            {item.title.length > 20 ? `${item.title.substring(0, 20)}...` : item.title}
-                          </Text>
-                          <Text className="mt-2 text-sm font-bold text-green-500/90 dark:text-white text-center"> ${item.price}</Text>
-                          </TouchableOpacity>
-                              ))}
-                        </View>  
-                  </ImageBackground>
-                  </ScrollView>
+          <View className="mt-2 w-full">
+            <Text className="text-md font-semibold text-center mt-10 dark:text-white">Related Items</Text>
+            <ScrollView
+              horizontal
+              showsHorizontalScrollIndicator={false}
+              contentContainerStyle={{ padding: 5 }}
+            >
+              {/* <ImageBackground
+                source={{ uri: selectedItem.filename }}
+                style={{ width: '100%', padding: 5, }}
+              > */}
+                  {relatedGroceries &&
+                    relatedGroceries.map((item) => (
+                      <TouchableOpacity
+                        onPress={() => openBottomSheet(item)}
+                        key={item.id}
+                        className="items-center p-5 bg-emerald-500/90 dark:bg-blue-500/60 mx-2 my-3 rounded-xl"
+                      >
+                        <Text className="mt-2 text-sm font-bold text-gray-100 dark:text-gray-300 text-center">
+                          {item.title.length > 20
+                            ? `${item.title.substring(0, 20)}...`
+                            : item.title}
+                        </Text>
+                        <Text className="mt-2 text-sm font-bold text-slate-700/90 dark:text-white text-center">
+                          ${item.price}
+                        </Text>
+                      </TouchableOpacity>
+                    ))}
+              {/* </ImageBackground> */}
+            </ScrollView>
+
           </View>
         </>
       )}
@@ -255,9 +327,8 @@ function Shop() {
 
   return (
     <View style={{ flex: 1 }} className='bg-white/10 dark:bg-gray-900'>
-      {isScrolling && (
-        <View className='flex flex-row justify-between items-start'>
-          <SearchInput searchQuery={searchQuery} setSearchQuery={setSearchQuery} iconColor={"white"} classStyle={"bg-slate-600/80 dark:bg-gray-300/10 mt-5 ml-2 mb-4 text-white"} inputClassStyle='text-slate-200 placeholder:text-slate-400' placeholder={"Search in store?"} />      
+        <View className='flex flex-row justify-between items-start bg-transparent/10'>
+          <SearchInput searchQuery={searchQuery} setSearchQuery={setSearchQuery} iconColor={"white"} classStyle={"bg-slate-600/80 dark:bg-gray-300/10 mt-5 ml-2 mb-4 text-white"} inputClassStyle='text-slate-200 placeholder:text-slate-400' placeholder={"What would you like to buy?"} />      
           <View className='flex flex-row justify-evenly mt-5'>
             {itemsInCart.length > 0 && (
               <Pressable className='bg-blue-400/80 dark:bg-blue-400/10 mx-2 py-3 px-2 rounded-lg flex flex-row' onPress={() => setCartModal(true)}>
@@ -270,24 +341,18 @@ function Shop() {
               </Pressable>
             </View>
           </View>
-      )}
         <ScrollView onScroll={handleScroll}>
-          {!isScrolling && (
             <>
-            
           <View className="fixed">
             <Image source={shop.image} style={{ width: 400, height: 150 }} className="z-0" />
-            <Pressable onPress={() => router.back()} className="absolute top-[15px] left-0 p-3 bg-transparent/50 rounded-md">
-              <Ionicons name="arrow-back" size={24} color="white" />
-            </Pressable>
-            <Pressable onPress={() => setInformationModal(true)} className="absolute top-[10px] right-0 p-2 bg-blue-400/40 rounded-md">
+            <Pressable onPress={() => setInformationModal(true)} className="absolute top-[10px] right-0 p-2 bg-emerald-400/40 dark:bg-blue-400/40 rounded-md">
               <MaterialIcons name="menu-open" size={24} color="white" />
             </Pressable>
-            <Pressable onPress={() => setContactModal(true)} className="absolute top-[60px] right-0 p-2 bg-blue-400/40 rounded-md">
+            <Pressable onPress={() => setContactModal(true)} className="absolute top-[60px] right-0 p-2 bg-emerald-400/40 dark:bg-blue-400/40 rounded-md">
               <Feather name="phone-call" size={24} color="white" />
             </Pressable>
             {itemsInCart.length > 0 && (
-              <Pressable onPress={() => setCartModal(true)} className="absolute flex flex-row top-[110px] bg-blue-400/40 p-2 right-0 rounded-md">
+              <Pressable onPress={() => setCartModal(true)} className="absolute flex flex-row top-[110px] bg-emerald-400/40 dark:bg-blue-400/40 p-2 right-0 rounded-md">
                 <MaterialIcons name="shopping-cart" size={20} color="white" />
                 <Text className="font-semibold text-md text-red-400">{itemsInCart.length}</Text>
               </Pressable>
@@ -295,34 +360,44 @@ function Shop() {
           </View>
 
           <View className="flex flex-row justify-between px-2 mt-2">
-            <Text className="font-semibold text-sm text-blue-400">Welcome to: {shop.name}</Text>
+            <Text className="font-semibold text-sm text-slate-600 dark:text-blue-400">Welcome to: {shop.name}</Text>
             <Text className="font-semibold text-sm text-slate-700 dark:text-white" >
               We are currently:
               <Text className="text-yellow-400"> {shop.status}</Text>
             </Text>
           </View>
-            <SearchInput searchQuery={searchQuery} setSearchQuery={setSearchQuery} iconColor={"white"} classStyle={"bg-slate-600/80 mt-5 dark:bg-gray-300/10 text-white mx-auto"} inputClassStyle='text-slate-200 placeholder:text-slate-400' placeholder={"what would you like to buy?"} />
             </>
-          )}
           
-          <View className="flex flex-row flex-wrap justify-evenly items-center mt-5">
-            {filteredGroceries.map((item) => (
+          <View className="flex flex-row justify-evenly gap-x-1 flex-wrap mt-5">
+        {Object.entries(groupedGroceries).map(([category, items]) => (
+        <View key={category} className="mb-5">
+          <Text className="text-lg font-bold text-gray-900 dark:text-gray-100 ml-2 mb-2">{category}</Text>
+          <ScrollView
+            horizontal
+            showsHorizontalScrollIndicator={false}
+            className="flex flex-row"
+          >
+            {items.map((item) => (
+              <TouchableOpacity key={item.id} onPress={() => openBottomSheet(item)} className="w-100 py-3">
               <View
-                key={item.id}
-                className="w-1/3 items-center p-3 bg-blue-500/30 dark:bg-transparent/90 mx-2 my-3 rounded-xl z-100"
+                className="w-[150px] h-[170px] items-center bg-emerald-500/30 dark:bg-blue-500/30 mr-3 rounded-xl"
               >
-                <TouchableOpacity onPress={() => openBottomSheet(item)}>
-                  <Image
-                    source={{ uri: item.filename }}
-                    className="w-30 h-20 rounded-lg"
-                  />
+                    <Image
+                      source={{ uri: item.filename }}
+                      className="h-28 w-[148px]"
+                    />
                   <Text className="mt-2 text-sm font-bold text-gray-800 dark:text-gray-100/80 text-center">
                     {item.title.length > 20 ? `${item.title.substring(0, 20)}...` : item.title}
                   </Text>
-                </TouchableOpacity>
-                <Text className="mt-2 text-sm font-bold text-gray-800 dark:text-white text-center">${item.price}</Text>
+                  <Text className="mt-5 text-sm font-bold text-gray-800 dark:text-white text-center">
+                    ${item.price}
+                  </Text>
               </View>
+                </TouchableOpacity>
             ))}
+          </ScrollView>
+        </View>
+      ))}
           </View>
         </ScrollView>
 
@@ -331,6 +406,7 @@ function Shop() {
         snapPoints={snapPoints}
         index={-1}
         enablePanDownToClose={true}
+        backgroundStyle={bottomSheetBackgroundColor}
       >
         {renderContent()}
       </BottomSheet>
